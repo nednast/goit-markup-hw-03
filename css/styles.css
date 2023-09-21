@@ -56,11 +56,11 @@ body {
   list-style: none;
   display: flex;
   padding-left: 76px;
-  gap: 40pxs;
+  gap: 40px;
 }
 
 .menu-card {
-  padding-right: 40px;
+  padding: 24px 0;
 }
 
 .menu-link {
@@ -228,7 +228,7 @@ body {
 }
 
 .team-text-wrapper {
-  padding: 32px;
+  padding: 32px 0;
 }
 
 .team-subtitle {
