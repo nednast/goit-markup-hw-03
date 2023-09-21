@@ -16,7 +16,6 @@ body {
 /* Шапка */
 
 .header {
-  padding: 25.5px 156px 25.5px 156px;
   border-bottom: 1px solid #e7e9fc;
 }
 
@@ -55,7 +54,6 @@ body {
 .menu {
   list-style: none;
   display: flex;
-  padding-left: 76px;
   gap: 40px;
 }
 
@@ -117,6 +115,8 @@ body {
 }
 
 .order-title {
+  margin-left: auto;
+  margin-right: auto;
   color: #ffffff;
   font-size: 56px;
   letter-spacing: 0.02em;
@@ -125,6 +125,8 @@ body {
 }
 
 .button-order {
+  margin-left: auto;
+  margin-right: auto;
   background-color: #4d5ae5;
   color: #ffffff;
   font-weight: 500;
@@ -152,7 +154,6 @@ body {
 
 /* Секция характеристики */
 .characteristics {
-  height: 344px;
   padding: 120px 0;
 }
 
@@ -184,7 +185,6 @@ body {
 }
 
 .cards-characteristics {
-  padding-right: 24px;
   width: calc((100% - 72px) / 4);
 }
 
@@ -207,7 +207,6 @@ body {
   text-align: center;
   text-transform: capitalize;
   color: #2e2f42;
-  padding-bottom: 72px;
   margin-bottom: 72px;
 }
 .team-list {
@@ -217,7 +216,7 @@ body {
 }
 .card-team {
   background-color: #ffffff;
-  margin-right: 24px;
+
   text-align: center;
   gap: 32px;
   border-radius: 0px 0px 4px 4px;
@@ -225,7 +224,6 @@ body {
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
   width: calc((100% - 72px) / 4);
-  padding: 32px 0;
 }
 
 .team-text-wrapper {
@@ -238,7 +236,6 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  padding-top: 32px;
   text-align: center;
   margin-bottom: 8px;
 }
@@ -247,7 +244,6 @@ body {
   font-size: 16px;
   letter-spacing: 0.02em;
   line-height: 1.5;
-  padding-bottom: 32px;
   text-align: center;
 }
 /* Секция портфолио */
@@ -274,10 +270,7 @@ body {
   row-gap: 48px;
 }
 .card-portfolio {
-  margin-right: 24px;
-  margin-bottom: 48px;
   width: calc((100% - 48px) / 3);
-  gap: 32px;
 }
 .portfolio-text-wrapper {
   padding: 32px 16px;
@@ -290,8 +283,6 @@ body {
   font-weight: 500;
   line-height: 1.2;
   color: #2e2f42;
-  padding-top: 32px;
-  padding-left: 16px;
   margin-bottom: 8px;
 }
 
@@ -300,8 +291,6 @@ body {
   font-size: 16px;
   letter-spacing: 0.02em;
   line-height: 1.5;
-  padding-bottom: 32px;
-  padding-left: 16px;
 }
 /* Футер */
 .footer {
@@ -325,7 +314,6 @@ body {
 }
 
 .text-footer {
-  padding-top: 17.5px;
   color: #f4f4fd;
   font-size: 16px;
   letter-spacing: 0.02em;
