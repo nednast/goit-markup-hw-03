@@ -4,6 +4,9 @@
   box-sizing: border-box;
   list-style: none;
 }
+img {
+  display: block;
+}
 
 body {
   font-family: "Roboto", sans-serif;
@@ -12,13 +15,24 @@ body {
 }
 /* Шапка */
 
-header {
+.header {
   padding: 25.5px 156px 25.5px 156px;
+  border-bottom: 1px solid #e7e9fc;
 }
 
 .container-head {
   display: flex;
   justify-content: space-between;
+}
+
+.container {
+  width: 1158px;
+  padding: 0 15px;
+}
+
+.nav-header {
+  display: flex;
+  align-items: center;
 }
 
 .logo {
@@ -30,10 +44,7 @@ header {
   text-transform: uppercase;
   text-decoration: none;
   color: #4d5ae5;
-}
-
-nav {
-  display: flex;
+  margin-right: 76px;
 }
 
 .studio {
@@ -44,6 +55,7 @@ nav {
   list-style: none;
   display: flex;
   padding-left: 76px;
+  gap: 40pxs;
 }
 
 .menu-card {
@@ -73,10 +85,11 @@ nav {
 .list-contacts {
   list-style: none;
   display: flex;
+  gap: 40px;
 }
 
 .cards-contacts {
-  padding-right: 40px;
+  padding: 24px 0;
 }
 
 .cards-contacts-link {
@@ -97,8 +110,8 @@ nav {
 .order {
   background-color: #2e2f42;
   height: 600px;
-  padding: 188px 472px;
   text-align: center;
+  padding: 188px 0;
 }
 
 .order-title {
@@ -106,6 +119,7 @@ nav {
   font-size: 56px;
   letter-spacing: 0.02em;
   line-height: 1.07;
+  max-width: 496px;
 }
 
 .button-order {
@@ -113,6 +127,8 @@ nav {
   color: #ffffff;
   font-weight: 500;
   letter-spacing: 0.64px;
+  display: block;
+  min-width: 169px;
   cursor: pointer;
   font-family: "Roboto", sans-serif;
   line-height: 1.5;
@@ -134,7 +150,7 @@ nav {
 /* Секция характеристики */
 .characteristics {
   height: 344px;
-  padding: 120px 156px;
+  padding: 120px 0;
 }
 
 .characteristics-title {
@@ -143,6 +159,7 @@ nav {
 .list-characteristics {
   list-style: none;
   display: flex;
+  gap: 24px;
 }
 .characteristics-subtitle {
   font-size: 20px;
@@ -150,10 +167,12 @@ nav {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 
 .cards-characteristics {
   padding-right: 24px;
+  width: calc((100% - 72px) / 4);
 }
 
 .text-characteristics {
@@ -165,8 +184,7 @@ nav {
 /* Секция команда*/
 .team {
   background-color: #f4f4fd;
-  /* height: 372px; */
-  padding: 120px 156px;
+  padding: 120px 0;
 }
 .team-title {
   font-size: 36px;
@@ -177,11 +195,12 @@ nav {
   text-transform: capitalize;
   color: #2e2f42;
   padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 .team-list {
   list-style: none;
   display: flex;
-  justify-content: center;
+  gap: 24px;
 }
 .card-team {
   background-color: #ffffff;
@@ -192,6 +211,11 @@ nav {
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+  width: calc((100% - 72px) / 4);
+}
+
+.team-text-wrapper {
+  padding: 32px;
 }
 
 .team-subtitle {
@@ -201,6 +225,8 @@ nav {
   letter-spacing: 0.02em;
   color: #2e2f42;
   padding-top: 32px;
+  text-align: center;
+  margin-bottom: 8px;
 }
 .team-text {
   color: #434455;
@@ -208,10 +234,11 @@ nav {
   letter-spacing: 0.02em;
   line-height: 1.5;
   padding-bottom: 32px;
+  text-align: center;
 }
 /* Секция портфолио */
 .portfolio {
-  padding: 120px 156px;
+  padding: 120px 0 120px 0;
 }
 .portfolio-title {
   font-size: 36px;
@@ -221,7 +248,7 @@ nav {
   text-align: center;
   text-transform: capitalize;
   color: #2e2f42;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 
 .portfolio-list {
@@ -229,15 +256,20 @@ nav {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
 }
 .card-portfolio {
   margin-right: 24px;
   margin-bottom: 48px;
+  width: calc((100% - 48px) / 3);
   gap: 32px;
-  border: 1px solid var(--CORNFLOWER, #e7e9fc);
-  background: var(--WHITE, #fff);
 }
-
+.portfolio-text-wrapper {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+}
 .portfolio-subtitle {
   font-size: 20px;
   letter-spacing: 0.02em;
@@ -246,6 +278,7 @@ nav {
   color: #2e2f42;
   padding-top: 32px;
   padding-left: 16px;
+  margin-bottom: 8px;
 }
 
 .portfolio-text {
@@ -259,7 +292,7 @@ nav {
 /* Футер */
 .footer {
   background-color: #2e2f42;
-  padding: 100px 156px;
+  padding: 100px 0;
 }
 .logo-footer {
   font-family: "Raleway", sans-serif;
@@ -270,6 +303,8 @@ nav {
   text-transform: uppercase;
   text-decoration: none;
   color: #4d5ae5;
+  display: inline-block;
+  margin-bottom: 16px;
 }
 .studio-footer {
   color: #f4f4fd;
